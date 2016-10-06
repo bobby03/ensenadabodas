@@ -68,11 +68,11 @@
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+				array('label'=>'Inicio', 'url'=>array('/site/index')),
+				array('label'=>'Nosotros', 'url'=>array('/site/page', 'view'=>'about')),
+				array('label'=>'Contacto', 'url'=>array('/site/contact')),
+				// array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+				// array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>
 	</div><!-- mainmenu -->
@@ -87,9 +87,23 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+		<div class="footer-content">
+			<div id="logo"></div>
+			<div class="descripcion">
+				Ensenada bodas es una página en la cual puedes encontrar todos tus 
+				proveedores de servicios para tu boda.
+			</div>
+			<div class='social-network'>
+				<h2>¡Síguenos!</h2>
+				<div class="facebook"></div>
+				<div class="instagram"></div>
+			</div>
+			<div class="ribbon">Ensenada Bodas © 2016</div>
+		</div>
+
+		<!-- Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
 		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
+		<?php echo Yii::powered(); ?> -->
 	</div><!-- footer -->
 
 </div><!-- page -->
