@@ -1,0 +1,107 @@
+.container-contacto {
+    width: 364px;
+    float: left;
+}
+.container-form {
+    width: 492px;
+    float: right;
+    margin-bottom: 60px;
+}
+.container-titulo {
+    margin-top: 54px;
+    margin-bottom: 32px;
+}
+label.titulo1 {
+    color: #4e1950;
+    font-family: 'Century GBold';
+    font-size: 28px;
+}
+.cont {
+    width: 37px;
+    height: 38px;
+    background-color: #D6B0CE;
+    float: left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 12px;
+}
+.telefono
+{
+	 background-image: url(../../images/contacto/telefono.png);
+}
+.correo
+{
+	 background-image: url(../../images/contacto/correo.png);
+}
+.cont1
+{
+    height: 38px;
+    margin-left: 8px;
+    line-height: 37px;
+    color: #4e1950;
+    font-size: 14px;
+    float: left;
+}
+.tinfo
+{
+	width: 200px;
+	font-family: 'Century Gothic';
+}
+.cinfo
+{
+	width: 250px;
+	font-family: 'Century GBold';
+}
+span.boldt
+{
+    font-family: 'Century GBold';
+}
+.form-box {
+    width: 492px;
+    height: 206px;
+    background-image: url(../../images/contacto/Caja-de-mensaje-01.png);
+    background-size: 100%;
+}
+.form1, .form2, .form3 {
+    width: 492px;
+    position: relative;
+}
+.name-box, .subject-box {
+    width: 216px;
+    height: 24px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+}
+.email-box {
+    width: 216px;
+    height: 24px;
+    background-color: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: right;
+}
+.question-box {
+    width: 452px;
+    height: 60px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+}
+::-webkit-input-placeholder{
+ color: #4e1950;
+ font-family: 'Century GBold'; 
+ font-size: 12px;
+}
+
+.list:after,
+.form1:after,
+.form2:after,
+.form3:after
+{
+	display: block;
+	content: '';
+	clear:both;
+}

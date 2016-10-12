@@ -158,6 +158,7 @@ span.search-button {
     text-align: center;
     background: 0;
     border-right: 1px solid #CECFCF;
+        font-size: 12pt;
 }
 #mainmenu ul li a:hover, #mainmenu ul li.active a {
     color: #4D1965;
@@ -354,6 +355,12 @@ margin-right: 0;
 }
 .marca:last-child{
     margin-left: 0;
+}
+
+#mainmenu ul li a:hover, 
+#mainmenu ul li.active a {
+    color: #4D1965;
+    background: #D6B0CE;
 }
 .content-wrapper:after,
 .ribbon-destacados:after,

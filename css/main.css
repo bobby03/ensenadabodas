@@ -1,3 +1,13 @@
+@font-face
+{
+    font-family:'Century Gothic';
+    src:url(../fonts/Century_Gothic.ttf);
+}
+@font-face
+{
+    font-family:'Century GBold';
+    src:url(../fonts/gothicb.ttf);
+}
 body
 {
 	margin: 0;
@@ -217,7 +227,24 @@ div.search-form
 	line-height: 15px;
 	text-decoration: none;
 }
-
+.container-header {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    background-image:url(../images/nosotros/superior.png);
+    background-size: 100%;
+    height: 186px;
+    margin-bottom: 74px;
+}
+label.textheader {
+    display: block;
+    position: relative;
+    top: 89px;
+    left: 178px;
+    font-size: 56pt;
+    font-family: 'Century GBold';
+    color: #4E1950;
+}
 .operations li a:visited
 {
 	color: #0066A4;
