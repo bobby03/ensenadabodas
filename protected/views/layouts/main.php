@@ -61,16 +61,22 @@
 			<div class="derecha"></div>
 		</div>
 	</div>
-	<?php else: ?>
-	noentra	
+	<?php elseif($this->id =='acercade'): ?>
+	<div class="container-header">
+			<label class="textheader">NOSOTROS</label>
+	</div>
+<?php elseif($this->id =='contacto'): ?>
+	<div class="container-header">
+			<label class="textheader">CONTACTO</label>
+	</div>
 	<?php endif; ?> 
 	</div>
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-				array('label'=>'Inicio', 'url'=>array('/site/index')),
-				array('label'=>'Nosotros', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contacto', 'url'=>array('/site/contact')),
+				array('label'=>'INICIO', 'url'=>array('/site/index')),
+				array('label'=>'NOSOTROS', 'url'=>array('/site/page', 'view'=>'about')),
+				array('label'=>'CONTACTO', 'url'=>array('/site/contact')),
 				// array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				// array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
