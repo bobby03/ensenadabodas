@@ -1,8 +1,18 @@
+@font-face {
+    font-family: 'century-gothic';
+    src: url('../fonts/GOTHIC.TTF'); 
+}
+@font-face {
+    font-family: 'century-bold';
+    src: url('../fonts/GOTHICB.TTF'); 
+}
+
 #page {
     margin: 0;
     background: white;
     width: 100%;
     border: 0;
+    font-family: 'century-gothic';
 }
 #header {
 	background-color: #FFFFFF;
@@ -38,7 +48,7 @@ h1 {
 .seach-wrapper {
     width: 100%;
     height: 66px;
-    background-color: rgba(77,25,80,0.2);
+    background-color: rgba(214,176,206,0.4);
     position: absolute;
     top: 0;
     z-index: 9999;
@@ -73,6 +83,10 @@ span.search-button {
     margin-left: 10px;
     background-color: #D5B1CF;
     border-radius: 4px;
+    background-position: center;
+    background-size: 17px;
+    background-image: url('../images/inicio/lupa-01.png');
+    background-repeat: no-repeat; 
 }
 .search-content {
     width: 100%;
@@ -126,7 +140,7 @@ span.search-button {
     max-width: 998px;
     height: 54px;
     margin: 0 auto;
-    margin-top: -70px;
+    margin-top: -122px;
     border-bottom: 2px solid #D5B1CF;
     position: relative;
     z-index: 99999;
@@ -174,13 +188,13 @@ span.search-button {
 }
 .categorias {
     background: #FFFFFF;
-    padding-top: 20px;
 }
 .menu-categorias {
     width: 220px;
     border-top: 1px solid #CECFCF;
     margin-right: 28px;
-    float: left
+    float: left;    
+    margin-top: 30px;
 }
 
 .menu-categorias .titulo {
@@ -215,7 +229,8 @@ span.search-button {
 }
 .titular {
     width: 100%;    
-    margin-bottom: 39px;
+    margin-bottom: 6px;
+    margin-top: 26px;
 }
 input.filtro {
     width: 182px;
@@ -226,11 +241,14 @@ input.filtro {
     margin: 0;
     margin-right: 26px;
     padding-left: 14px;
-    border: 1px solid #D5B1CF;
+    border-radius: 4px;
+    border: 1px solid #CFCFCF;
+    color: #4E1950 !important;
+    opacity: 1;
 }
 .categorias-content h1,
 .titular h1 {
-    color: #4D1965;
+   color: #4E1950;
     float: left;
     font-weight: bold
 }
@@ -337,7 +355,7 @@ margin-right: 0;
 }
 .marcas h2 {
     text-align: center;
-    color:#4D1965;
+    color:#4E1950;
     font-weight: bold;
     margin-bottom: 30px;
 }
@@ -355,6 +373,90 @@ margin-right: 0;
 .marca:last-child{
     margin-left: 0;
 }
+
+#footer {
+    width: 100%;
+    height: 224px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/inicio/fondo-final-pagina-01.png);
+    padding: 0;
+    margin: 0;
+    border: 0;
+    position: relative;
+}
+.footer-content {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 46px;
+}
+
+.footer-content #logo {
+    background-image: url('../images/inicio/logo-abajo-pagina-01.png');
+    width: 262px;
+    height: 83px;
+    float: left;
+    margin-right: 22px;
+}
+.descripcion {
+    width: 262px;
+    float: left;
+    margin-right: 40px;
+    font-size: 16px;
+    text-align: justify;
+    font-family: 'century-bold';
+    color: #4E1950;
+}
+.social-network {
+    width: 112px;
+    float: left;
+}
+h2 {
+    font-family: 'century-bold';
+    font-size: 21px;
+    margin-bottom: 15px;
+    color: #4E1950;
+}
+.facebook, .instagram {
+    width: 52px;
+    height: 52px;
+    float: left;
+    margin-right: 8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.facebook {
+    background-image: url('../images/inicio/facebook-01.png'); 
+}
+.instagram {
+    margin-right: 0;
+    background-image: url('../images/inicio/instagram-01.png');
+}
+#footer .ribbon {
+    width: 100%;
+    height: 56px;
+    background-color: rgba(214,176,206,0.4);
+    position: absolute;
+    bottom: 0;
+    z-index: 9999;
+}
+.ribbon .copyright {
+    padding-top: 13px;
+    font-size: 23px;
+    font-family: 'century-bold';
+    color: #4E1950;
+}
+.ribbon .copyright .bold {
+    font-family: 'century-gothic';
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.social-network:after,
+.footer-content:after,
 .content-wrapper:after,
 .ribbon-destacados:after,
 .net-categorias:after,
@@ -364,3 +466,4 @@ margin-right: 0;
     display: block;
     clear: both;
 }
+

@@ -98,9 +98,8 @@
 				<div class="facebook"></div>
 				<div class="instagram"></div>
 			</div>
-			<div class="ribbon">Ensenada Bodas © 2016</div>
 		</div>
-
+		<div class="ribbon"><div class="copyright">Ensenada Bodas <span class="bold">©</span> 2016</div></div>
 		<!-- Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?> -->
